@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=Zilla+Slab&display=swap" rel="stylesheet">
+	 <script src="js/jquery.js"></script>
+	<title> TOOLGRID </title>
+</head>
+
+<body>
+	<div class="intro">
+		<div class="title">
+			<h1>TOOLGRID</h1>
+		</div>
+		<div class="text">
+			<p>ToolGrid est l'outil indispensable du bon designer graphique. La box propose un accès rapide à 8 applications indispensables et intuitives. Outils de créations, forums, sources d'inspirations, vous y trouverez forcément votre bonheur ! Que vous soyez graphiste, illustrateur, web designer, animateur, jardinier ou contrôleur RATP, cet outil est fait pour vous !</p>
+			<h2><a href="#parent" class="scrollTo" >↷</a></h2>
+		</div>
+	</div>
+	<div id="parent">
+		<div class="div1"> <a href="https://coolors.co" target="_blank"><img src="import/coolorscouv.jpg"> </a> </div>
+		<div class="div2"><a href="https://css-tricks.com/" target="_blank"><img src="import/csstrickscouv.jpg"> </a> </div>
+		<div class="div3"><a href="https://vimeo.com/fr" target="_blank"><img src="import/vimeocouv.jpg"> </a> </div>
+		<div class="div4"><a href="https://drive.google.com/" target="_blank"><img src="import/drivecouv.jpg"> </a></div>
+		<div class="div5"><a href="https://www.behance.net/" target="_blank"><img src="import/behancecouv.jpg"> </a></div>
+		<div class="div6"><a href="https://www.instagram.com/" target="_blank"><img src="import/instacouv.jpg"> </a></div>
+		<div class="div7"><a href="https://ascii.today/" target="_blank"><img src="import/asciicouv.jpg"> </a></div>
+		<div class="div8"><a href="https://poussetafonte.com/" target="_blank"><img src="import/ptfcouv.jpg"> </a></div>
+	</div>
+
+	 <script>
+  	$(document).ready(function() {
+    $('.scrollTo').on('click', function() { 
+      var page = $(this).attr('href'); 
+      var speed = 800; 
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed );
+      return false;
+   	 });
+ 	 });
+	</script>
+</body>
+</html>
